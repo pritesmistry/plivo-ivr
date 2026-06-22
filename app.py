@@ -13,7 +13,7 @@ def answer():
     xml = """
 <Response>
 <GetInput action="https://plivo-ivr-qskz.onrender.com/ivr" method="POST" numDigits="1" timeout="10">
-    <Speak>Welcome to Bio Violet. Press 1 for sales. Press 2 for support.</Speak>
+    <Speak>Welcome to Bio Leather. Press 1 for sales. Press 2 for support.</Speak>
 </GetInput>
 
 <Speak>No input received. Goodbye.</Speak>
@@ -44,7 +44,7 @@ def ivr():
 
         xml = """
 <Response>
-<Speak>Please email support at bioviolet dot in</Speak>
+<Speak>Please email support at bioleather dot in</Speak>
 </Response>
 """
 
