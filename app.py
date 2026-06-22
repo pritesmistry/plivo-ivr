@@ -3,7 +3,7 @@ from plivo import plivoxml
 
 app = Flask(__name__)
 
-@app.route("/answer", methods=["POST"])
+@app.route("/answer", methods=["GET", "POST"])
 def answer():
 
     response = plivoxml.ResponseElement()
@@ -25,7 +25,7 @@ def answer():
     return str(response)
 
 
-@app.route("/ivr", methods=["POST"])
+@app.route("/ivr", methods=["GET", "POST"])
 def ivr():
 
     digit = request.form.get("Digits")
@@ -42,7 +42,7 @@ def ivr():
 
         response.add(
             plivoxml.SpeakElement(
-                "Please email support at bioviolet dot in"
+                "Please email support at bioleather dot in"
             )
         )
 
