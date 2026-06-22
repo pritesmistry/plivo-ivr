@@ -9,7 +9,7 @@ def answer():
     response = plivoxml.ResponseElement()
 
     get_input = plivoxml.GetInputElement(
-        action="/ivr",
+        action="https://plivo-ivr-qskz.onrender.com/ivr",
         method="POST",
         num_digits=1
     )
