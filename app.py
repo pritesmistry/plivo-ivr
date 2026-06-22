@@ -46,7 +46,9 @@ def ivr():
 
         xml = """
 <Response>
-<Speak>Invalid option</Speak>
+<Dial callerId="+912269988681">
+    <Number>+918087153266</Number>
+</Dial>
 </Response>
 """
 
